@@ -1,0 +1,25 @@
+import {ChainId} from '../../generator/chains';
+import {GovernanceConfig} from '../types';
+
+export const governanceConfigMumbai: GovernanceConfig = {
+  name: 'Mumbai',
+  CHAIN_ID: ChainId.mumbai,
+  ADDRESSES: {
+    CROSS_CHAIN_CONTROLLER: '0xe521cB5e23DbF8248c0B0C3C2503feA3C4c7Caff',
+    VOTING_MACHINE: '0x05D0215cFC8D4B726085ADDb1ce43bC5C70f9D8f',
+    PAYLOADS_CONTROLLER: '0x92041C9904d1F0b8100D1d7e01B760d2cF1Fb426',
+  },
+};
+
+export const governanceConfigPolygon: GovernanceConfig = {
+  name: 'Polygon',
+  CHAIN_ID: ChainId.polygon,
+  ADDRESSES: {
+    CROSS_CHAIN_CONTROLLER: '0xF6B99959F0b5e79E1CC7062E12aF632CEb18eF0d',
+    CL_EMERGENCY_ORACLE: '0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F',
+    VOTING_MACHINE: '0xc8a2ADC4261c6b669CdFf69E717E77C9cFeB420d',
+    PAYLOADS_CONTROLLER: '0x401B5D0294E23637c18fcc38b1Bca814CDa2637C',
+    PC_DATA_HELPER: '0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A',
+    VM_DATA_HELPER: '0x77976B51569896523EE215962Ee91ff236Fa50E8',
+  },
+};
